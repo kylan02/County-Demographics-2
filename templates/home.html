@@ -14,12 +14,13 @@
     <title>Fun Fact</title>
   </head>
   <body>
-    <form action="/action_page.php">
+    <form action="/">
       <select name="states">
-        {{ options }}
+        {{ states }}
       </select>
       <br><br>
       <input type="submit">
     </form>
+	<p>The highest travel time is: {{ highestTravelTime }}</p>
   </body>
 </html>
