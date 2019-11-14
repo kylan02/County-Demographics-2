@@ -11,7 +11,7 @@ def render_main():
 	if 'states' in request.args:
 		return render_template('home.html', states = get_state_options(counties), highestTravelTime = fun_fact(request.args['states'], counties))
 	else:
-		return render_template('home.html', states = get_state_options(counties))
+		return render_template('home.html', states = get_state_options(counties), highestTravelTime = ["",""])
 
 def get_state_options(counties):
 	listOfStates = []
