@@ -22,6 +22,8 @@
       <input type="submit">
     </form>
 	{% if highestTravelTime[1] == "" %}
+	  <p> </p>
+	{% else %}
 		<p>The highest travel time is {{ highestTravelTime[1] }} in {{ highestTravelTime[0] }}</p>
 	{% endif %}
   </body>
